@@ -4,6 +4,7 @@ one:
   email: one@vendelo.com
   username: one01
   password_digest: <%= BCrypt::Password.create("testme", :cost => 5) %>
+  admin: true
 
 two:
   email: two@vendelo.com
