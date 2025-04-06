@@ -1,0 +1,55 @@
+es:
+  meta_title: 'Compra y venta'
+  activerecord:
+    models:
+      product: producto
+    attributes:
+      product:
+        title: título
+        description: descripción
+        price: precio
+        photo: foto
+    errors:
+      models:
+        product:
+          attributes:
+            title:
+              blank: 'El título no puede estar en blanco'
+            description:
+              blank: 'La descripción no puede estar en blanco'
+            price:
+              blank: 'El precio no puede estar en blanco'
+  common:
+    confirm: '¿Estás seguro?'
+    not_logged_in: 'No tienes una sesion iniciada'
+  authentication:
+    users:
+      create:
+        created: 'Tu usuario se ha creado con exito'
+    sessions:
+      create:
+        created: 'Bienvenido'
+        failed: 'Inicio de sesion invalido'
+  products:
+    index:
+      all: 'Todos'
+      title: 'Todos los productos'
+      min_price: 'Precio Minimo'
+      max_price: 'Precio Maximo'
+      filter: 'Filtrar'
+      sort: 'Ordenar por'
+      price: 'Precio'
+      query_text: 'Que estas buscando?'
+      expensive: "Caro"
+      cheap: "Barato"
+      newest: 'Recientemente'
+    edit:
+      title: 'Editar producto'
+    new:
+      add: 'Añadir nuevo producto'
+    create:
+      created: '¡Producto creado exitosamente!'
+    update:
+      updated: '¡Producto actualizado exitosamente!'
+    destroy:
+      destroyed: '¿Estás seguro de que deseas eliminar este producto?'

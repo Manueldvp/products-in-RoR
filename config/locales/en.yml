@@ -1,0 +1,41 @@
+en:
+  meta_title: 'Buy and sell hand products'
+  activerecord:
+    models:
+      product: product
+    attributes:
+      product:
+        title: title
+        description: Description
+        price: Price
+        photo: photo
+    errors:
+      models:
+      product:
+        attributes:
+          title:
+            blank: 'Title cant be blank'
+          description:
+            blank: 'Description cant be blank'
+          price:  'Price cant be blank'
+  common:
+    confirm: 'Are you sure?'
+  products:
+    index:
+      title: 'All products'
+      all: 'All'
+      min_price: 'Min Price'
+      max_price: 'Max Price'
+      filter: 'Filter'
+      sort: 'Sort by'
+      price: 'Price'
+    edit:
+      tittle: 'Product edit'
+    new:
+      add: 'Add new product'
+    create:
+      created: 'Product created successfully!'
+    update:
+      updated: 'Product updated successfully!'
+    destroy:
+      destroyed: 'Are you sure you want to delete this product?'
