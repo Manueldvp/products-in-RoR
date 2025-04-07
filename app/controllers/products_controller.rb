@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
     skip_before_action :protect_pages, only: [:index, :show]
+    
     def index
         @categories = Category.order(name: :asc).load_async
         # @products = Product.all.with_attached_photo
